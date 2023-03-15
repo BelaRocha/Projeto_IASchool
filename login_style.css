@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+    font-family: 'lucida console';
+}
+
+body{
+    margin: 0px;
+    background-color:#320a15;
+}
+p, a {
+    margin: 0;
+     color: #fad0e0;
+}
+.card{
+    display:flex;
+    justify-content: space-evenly;
+    margin: 7rem;
+}
+.coluna1{
+    display: flex;
+    flex-direction:column;
+    float: left;
+    margin-top: 5rem;
+    color: #f90145;
+    font-size:20px;
+}
+.coluna2{
+    display: flex;
+    flex-direction: column;
+    float:right;
+    background-color: #630826;
+    padding: 5rem;
+    font-size: 1.5rem;
+    border-radius: 4px;
+}
+.coluna2 input{
+    border: none;
+    background-color: #320a15;
+    border-radius: 5px;
+    padding: 1rem 8rem 0.8rem 0.6rem;
+    color: #fff;
+    border-bottom: #f90145 20px;
+    outline:#f90145;
+    opacity: 0.8;
+}
+a{
+    text-decoration: none;
+   
+    color: #fb838f;
+}
+.senha{
+    font-size: 12px;
+    margin-top: 5px;
+    opacity: 0.8;
+    
+}
+.poremail{
+    margin-bottom: 1rem;
+}
+.porsenha{
+    margin-bottom: 0.1px;
+}
+.entrar{
+    background-color: #f90145;
+    opacity: 0.8;
+    border-radius: 5px;
+    padding: 1rem 6.6rem;
+    margin: 1.4rem 0rem 1rem;
+}
+.entrar:hover{
+    background-color: #320a15;
+}
+input:hover{
+    border: 1px solid;
+}
+.inscrito{
+    display: flex;
+    font-size: 12px;
+    flex-direction: row;
+    color: white ;
+    opacity: 0.8;
+}
