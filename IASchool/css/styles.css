@@ -1,0 +1,262 @@
+/*Izabela Vieira Rocha, Alvaro Rodrigues
+Comentarios para aprendizado*/
+
+* { /* '*' seleciona todo o documento */
+    box-sizing: border-box; /*altera como a relação entre elemento, padding e margin funciona, mas n sei explicar direito, dsclp ;-;*/
+}
+
+/*
+
+Sintaxe CSS
+
+seletor {
+    propriedade: valor; <- declaraçao
+    color: white; <- outra declaração
+}
+
+seletor pode ser um elemento ou um id/class
+
+*/
+
+body { /*configurações primarias globais*/
+    background-color: #0D1721;
+    margin: 0;  /*remove a margem padrão do body (padrão é margin: 8px)*/
+    font-family: sans-serif; /*padroniza a fonte da pagina*/
+}
+
+
+#main { /* '#' hashtags indicam ids, que voce coloca em elementos html (<div id="main">). ids são unicas e n podem ser repetidas no html */
+    padding-bottom: 6.5rem; /*aumenta o tamanho da area principal da pagina 
+                            (assim, mesmo n tendo conteudo pra encher ela toda, ela fica grandinha)*/
+}
+.main {
+    color: white;
+}
+.header {
+    background-color: #1D2935;
+    overflow: hidden;  /*define o que fazer quando os conteudos "extravasam" a caixa do elemento 
+                            (um texto ou imagem é maior doq a <div> q o contem, por exemplo)*/
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.164), 0px 2px 10px rgba(0, 0, 0, 0.12); /*define uma sombra visual, 
+                                                                                        o primeiro valor é o dislocamento horizontal
+                                                                                        o segundo valor é o tamanho (vertical)
+                                                                                        o terceiro é em quantos pixels a sombra some
+                                                                                        a sombra por padrão é da cor do elemento da caixa
+                                                                                        voce pode definir uma cor em rgb, 
+                                                                                        e um valor de transparencia*/
+}
+
+h1, p, b, h2, h3, input {
+    padding: 0;
+    margin: 0;
+}
+
+.IAS_index { /* '.' pontos indicam classes (<div class="W3S"), classes não são unicas e podem ser repetidas*/
+    float: left; /*define onde o elemento/caixa deve ficar, left para esquerda, right para direita, etc.*/
+    color: #04A96D;
+    padding: 1rem;
+    margin-left: 0.5rem;
+    font-size: large; /*tamanho da fonte, pode ser em valores (12px ou 12rem) ou pode colocar o nome do tamanho (medium, large, small, etc)*/
+}
+
+.IAS_signup { /* '.' pontos indicam classes (<div class="W3S"), classes não são unicas e podem ser repetidas*/
+    float: none; /*define onde o elemento/caixa deve ficar, left para esquerda, right para direita, etc.*/
+    color: #04A96D;
+    padding: 1rem;
+    font-size: large; /*tamanho da fonte, pode ser em valores (12px ou 12rem) ou pode colocar o nome do tamanho (medium, large, small, etc)*/
+    text-align: center;
+    text-decoration: none;
+}
+
+.IAS_index:hover { /* seletor ":hover" depois de um elemento/seletor indica o que fazer quando se coloca o mouse em cima do objeto*/
+    color: white;
+}
+.IAS_signup:hover { /* seletor ":hover" depois de um elemento/seletor indica o que fazer quando se coloca o mouse em cima do objeto*/
+    color: white;
+}
+
+.exercises_button {
+    float: left;
+    color: white;
+    font-size: large;
+    padding: 1.8rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.exercises_button:visited {
+    float: left;
+    color: white;
+    font-size: large;
+    padding: 1.8rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button { 
+    float: right;
+    color: white;
+    background-color: #04A96D;
+    width: 7rem;
+    padding: 0.7rem;
+    margin-right: 1rem;
+    border: none; /*define a borda visual de um elemento/caixa*/
+    border-radius: 4rem; /*define a curvatura de uma borda*/
+    text-align: center;
+    font-size: large;
+    text-decoration: none;
+    margin-top: 1rem;
+}
+
+.button:visited { 
+    float: right;
+    color: white;
+    background-color: #04A96D;
+    width: 7rem;
+    
+    padding: 0.7rem;
+    margin-right: 1rem;
+    border: none; /*define a borda visual de um elemento/caixa*/
+    border-radius: 4rem; /*define a curvatura de uma borda*/
+    text-align: center;
+    font-size: large;
+    text-decoration: none;
+}
+
+.button:hover { 
+    float: right;
+    color: white;
+    background-color: #057c50;
+    width: 7rem;
+    padding: 0.7rem;
+    margin-right: 1rem;
+    border: none; /*define a borda visual de um elemento/caixa*/
+    border-radius: 4rem; /*define a curvatura de uma borda*/
+    text-align: center;
+    font-size: large;
+    text-decoration: none;
+}
+.tutorials_button:hover, .exercises_button:hover, .references_button:hover, #signup:hover { /*voce pode editar varios elementos de uma vez*/
+    background-color: #04A96D;
+}
+
+#main { /*vc pode editar elementos num mesmo arquivo css mais de uma vez*/
+    text-align: center;
+}
+
+.learn_main_text {
+    color: white;
+    font-size: 2rem;
+    margin-top: 6rem; /*define apenas a parte de cima da margem do elemento*/
+}
+
+.tagline_text {
+    color: white;
+    font-size: 1.4rem;
+    margin: 2rem; /*define todos os lados da margem do elemento*/
+}
+
+#search_bar { /*é possivel alterar elementos inputs (campos de texto, caixas de seleção)*/
+    color: gray;
+    font-size: 1rem; /*é possivel estilizar o texto padrão da caixa de texto (se houver)*/
+    font-weight: 600; /*define o "peso" de uma fonte, quanto mais alta mais grossa/em negrito ela fica*/
+    width: 40%; /*aumenta a largura da caixa de texto*/
+    padding: 1rem; /*aumenta a altura da caixa de texto*/
+    padding-left: 2rem;
+    border: none;
+    border-radius: 2rem;
+}
+
+#search_bar:focus { /*seletor :focus define o que fazer quando um elemento esta em foco
+                    (quando esta clicado, por exemplo: uma caixa de texto em uso)*/
+    background-color: lightblue;
+    outline: none; /*caixas de texto por padrão tem um linha de borda em certos navegadores
+                     outline: none remove ela*/
+}
+
+.begin_question_prompt {
+    padding: 2rem;
+}
+
+#question_link {
+    color: white;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+/*--------------------------------------------------------signup/login page---------------------------------------------------------*/
+
+body{
+    padding: 0%;
+    margin: 0%;
+    background-color: #0D1721
+}
+#registro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: sans-serif;
+}
+#login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: sans-serif;
+}
+.card{
+    background-color: #1D2935;
+    padding: 40px;
+    border-radius: 15px;
+    width: 280px;
+}
+.card_header{
+    font-size: 20;
+    padding-bottom: 30px;
+    opacity: 0.8;
+    color: #fff;
+}
+.content_header ::after{
+    background-color: #fff;
+    content: "";
+    width: 0.5;
+    height: 1;
+    display: block;
+    margin-top: -17;
+    margin-left: -5px
+}
+.card_content{
+    color: #fff;
+    font-size: 12;
+    opacity: 0.8;
+}
+.card_content_area{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+}
+.card_content_area input{
+    margin-top: 5px;
+    padding: 0 10px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #e1e1e1;
+    outline: none;
+    color: #fff;
+}
+.card_footer{
+    text-align: center;
+    font-size: 12;
+    opacity: 0.8;
+    color: #fff;
+}
+.card_footer .submit{
+    width: 100%;
+    height: 40px;
+    background-color: #057c50;
+    margin: 1px;
+    color: #fff;
+    border: none;
+}
+
+
